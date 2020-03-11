@@ -94,12 +94,19 @@
             <h2 class="section-title mb-3">Pre Launch Reviews</h2>
           </div>
         </div>
+        
         <div class="row justify-content-center">
           <div class="col-lg-7 mb-5">
-          <div>          
+          <div>
+          <style>
+            #embediframe {
+              width: 1px;
+              min-width: 100%;
+            }
+          </style>        
           <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.10/iframeResizer.min.js"></script>          
-          <iframe src="https://ampup.video/embed/wework-testimonial/" onload="iFrameResize()" allowtransparency="true" frameborder="0"></iframe>          
-          <script>iFrameResize({log:true})</script>
+          <iframe id="embediframe" src="https://ampup.video/embed/wework-testimonial/" onload="iFrameResize()" allowtransparency="true" frameborder="0"></iframe>          
+          <script>iFrameResize({log:true},'#embediframe')</script>
           </div>
           </div>
         
